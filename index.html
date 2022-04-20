@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Experimental site</title>
+</head>
+
+<body>
+
+   <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Self experimentation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {{home}}" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        content
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#in fiction">in fiction</a></li>
+                        <li><a class="dropdown-item" href="#currenrt practitioners of self experiment">currenrt practitioners of self experiment</a></li>
+                        <li><a class="dropdown-item" href="#">psychology</a></li>
+                        <li><a class="dropdown-item" href="#">chemistry</a></li>
+                        <li><a class="dropdown-item" href="#">physics</a></li>
+                        <li><a class="dropdown-item" href="#">Biology and medicine</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{contact}}" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+ <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Login
+                </button>
+            </form>
+
+<!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="loginformdiv">
+                            <form action="/login" method="post" id="loginform">
+                                <div id="alert"></div>
+                                <div class="mb-3">
+                                    <label for="loginemail" class="form-label">Email address</label>
+                                    <input type="email" name="loginemail" class="form-control" id="loginemail" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                        else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginpass" class="form-label">Password</label>
+                                    <input type="password" name="loginpass" class="form-control" id="loginpass"
+                                        required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" id="loginbtn" class="btn btn-primary">Submit</button>
+                                <a href="./register.html">Create Account</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- Carousel -->
+    <div class="my-1 mx-2">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/1.jpeg" height="600px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Label 1</h5>
+                        <p>Representation content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/2.jpg" height="600px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Label 2</h5>
+                        <p>Representation content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/3" height="600px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Label 3</h5>
+                        <p>Representation content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/4.jpeg" height="600px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Label 4</h5>
+                        <p>Representation content for the fourth slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+   <hr>
+
+
+<!-- in fiction -->
+
+    <div class="container imgdiv my-4" id="NewYear">
+        <h2>in fiction:</h2>
+        <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            View All
+        </button>
+        <br>
+        <div class="Carddiv">
+            <div class="card my-2 mx-2">
+                <img src="src/9" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">"The Invisible Man :-"Father of Science Fiction""</p>
+                </div>
+            </div>
+            <div class="card my-2 mx-2">
+                <img src="src/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Jekyll and Hyde -: "Outwardly good, but sometimes shockingly evil"</p>
+                </div>
+            </div>
+            <div class="card my-2 mx-2">
+                <img src="src/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Hulk-:Theatrical release poster</p>
+                </div>  
+            </div>
+            <div class="card my-2 mx-2">
+                <img src="src/12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">"The Man-Bat :- From Who's Who in the DC Universe"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- currenrt practitioners of self experiment -->
+
+    <div class="container imgdiv my-4" id="Republic">
+        <h2>currenrt practitioners of self experiment:</h2>
+        <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseRepublic" aria-expanded="false" aria-controls="collapseExample">
+            View All
+        </button>
+        <br>
+        <div class="Carddiv">
+            <div class="card my-2 mx-2">
+                <img src="src/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Seth Roberts-His work in self-experimentation which led to many discoveries</p>
+                </div>
+            </div>
+            <div class="card my-2 mx-2">
+                <img src="src/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Alexender shulgin-:a self-proclaimed Neo-Shulginist, is also known for a career of self experimentation by Bobby Adair</p>
+                </div>
+            </div>
+            <div class="card my-2 mx-2">
+                <img src="src/7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Quantified Self -:A transformation is happening</p>
+                </div>
+        </div>
+    </div>
+
+
+<!-- Js -->
+    <script src="index.js"></script>
+<!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

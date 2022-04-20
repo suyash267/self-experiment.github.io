@@ -1,0 +1,32 @@
+html{
+scroll-behavior:smooth;
+}
+.imgdiv {
+    padding: 15px;
+}
+
+.imgdiv img {
+    height: 150px;
+}
+
+.imgdiv2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgdiv2 img {
+    height: 250px;
+}
+.imgdiv2>div{
+    width: 18rem; border: 0px;
+}
+
+.Carddiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Carddiv>div {
+    width: 31%;
+}
